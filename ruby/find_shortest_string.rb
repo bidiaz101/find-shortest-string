@@ -1,5 +1,13 @@
 def find_shortest_string(arr)
   # type your code in here
+  shortest_string = arr.map do |str|
+    str.length
+  end
+
+  shortest_length = Math.min(...shortest_string)
+  arr.find do |str|
+    str.length == shortest_length
+  end
 end
 
 if __FILE__ == $PROGRAM_NAME
